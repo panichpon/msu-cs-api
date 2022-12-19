@@ -14,8 +14,8 @@ const pool = mariadb.createPool({
 //    user: 'msudb',
 //    password: 'msudb@1234',
 //    port: '3307',
-//    database: 'msudb',
-//    connectionLimit: 5
+//    database: 'tripbooking',
+//    connectionLimit: 2
 //});
 const utils = require("../util/util.js");
 
@@ -65,7 +65,7 @@ router.post("/booking", async (req, res) => {
         console.log(reqjson);
         conn = await pool.getConnection();
         const rows = await conn.query("INSERT INTO meeting (detail, meetingdatetime, latitude, longitude) VALUES (?, ?, ?, ?)", 
-        [reqjson.zone]);
+        [reqjson.detail, reqjson.meetingdatetime, reqjson.latitude, reqjson.longitude]);
         // { affectedRows: 1, insertId: 1, warningStatus: 0 }
         console.log(rows);
         res.send(utils.toJson(rows));

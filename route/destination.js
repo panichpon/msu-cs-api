@@ -14,8 +14,8 @@ const pool = mariadb.createPool({
 //    user: 'msudb',
 //    password: 'msudb@1234',
 //    port: '3307',
-//    database: 'msudb',
-//    connectionLimit: 5
+//    database: 'tripbooking',
+//    connectionLimit: 2
 //});
 const utils = require("../util/util.js");
 
