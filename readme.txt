@@ -6,3 +6,15 @@
 3. POST /api/users เพิ่ม user
 4. PUT /api/users/:id แก้ไขข้อมูลเฉพาะ user id ที่ส่งเข้ามา
 5. DELETE /api/users/:id ลบข้อมูลเฉพาะ user id ที่ส่งเข้ามา
+
+path ii
+[source]
+backend อยูในกระดาษและโค๊ด อยูใน https://github.com/panichpon/msu-cs-api
+frontend อยูในกระดาษและโค๊ด อยูใน https://github.com/panichpon/msu-frontend
+
+[production]
+frontend อยูในกระดาษและลิงค์ -> https://tas.zyntelligent.com/msu-frontend/
+backend endpoint อยูในกระดาษและลิงค์ -> https://msu.zyntelligent.com/api/v1/
+
+[postman collection]
+https://www.postman.com/collections/02db677ad584b0eb98d7
